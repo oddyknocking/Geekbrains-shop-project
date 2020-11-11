@@ -1,0 +1,158 @@
+@import "variables";
+
+.header {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header-side {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 37px;
+
+  &__name {
+    font-weight: 300;
+    font-size: 27px;
+    text-transform: uppercase;
+    margin-left: 13px;
+  }
+
+  &__D {
+    font-weight: 900;
+    color: $main_accent_color;
+  }
+}
+
+
+
+.search {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+
+  &__browse {
+    width: 87px;
+    font-size: 14px;
+    line-height: 2.29;
+    letter-spacing: 0.35px;
+    border: solid 1px #e6e6e6;
+    background-color: #f9f9f9;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color .4s ease;
+  }
+
+  &__browse:hover {
+    background-color: #bfbfbf;
+  }
+
+
+  &__browse>.fas {
+    margin-left: 3px;
+  }
+
+  &__input {
+    min-height: inherit;
+    border: solid 1px #e6e6e6;
+    border-left: none;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #222227;
+    font-weight: 400;
+    padding-left: 16px;
+  }
+
+  &__input::placeholder {
+    font-size: 14px;
+    color: #a4a4a4;
+    opacity: .6;
+    font-weight: 300;
+  }
+
+  &__input:focus::placeholder {
+    color: transparent;
+  }
+
+  &__button {
+    min-height: 34px;
+    border: solid 1px #e6e6e6;
+    border-left: none;
+    width: 36px;
+    cursor: pointer;
+  }
+
+  &__button>.fas {
+    font-size: 14px;
+    color: #a4a4a4;
+  }
+}
+
+
+
+.cart {
+  margin-right: 45px;
+}
+
+.cart:hover {
+  transform: rotate(15deg);
+}
+
+.my-account {
+  background-color: $main_accent_color;
+  width: 130px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #d6d6d6;
+  }
+
+  &__link {
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 2.13;
+    letter-spacing: 0.38px;
+  }
+
+  & > .fas {
+    margin-left: 8px;
+  }
+}
+
+
+
+.top-nav {
+  margin-top: 19px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  margin-right: 48px;
+}
+
+.menu-list>.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: $main_text_color;
+  text-transform: uppercase;
+}
+
