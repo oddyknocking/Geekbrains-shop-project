@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Single Page</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="../styles/style.css">
     <script src="https://kit.fontawesome.com/861689887d.js"></script>
 </head>
 <body>
-
 <div class="header container">
     <div class="header-side">
         <a href="index.html" class="logo">
@@ -49,80 +48,54 @@
             </div>
         </div>
     </div>
-    <div class="sp-slider-main">
-        <a href="#"><div class="sp-slider-main--arrow"><i class="fas fa-angle-left"></i></div></a>
-        <img src="../img/spsliderback.png" height="724" width="597" alt="newarrivals">
-        <a href="#"><div class="sp-slider-main--arrow sp-slider-main--arrow__effect"><i class="fas fa-angle-right"></i></div></a>
-    </div>
 </section>
-<section class="women-collection container">
-    <div class="women-collection__nav">
-        <h3 class="women-collection__nav__heading">WOMEN COLLECTION</h3>
-        <div class="women-collection__nav__border">
-            <div class="women-collection__nav__border__active"></div>
+<div class="checkout container" >
+    <label for="checkout-shipping_hide" class="main-label">01. Shipping Adress</label>
+    <input type="checkbox" id="checkout-shipping_hide" checked>
+    <form class="checkout-shipping">
+        <div class="checkout-shipping-check">
+            <span class="biggerspan">Check as a guest or register</span>
+            <span class="smallerspan">Register with us for future convenience</span>
+            <div><input type="checkbox" id="guest_input" class="checkbox"><label for="guest_input" class="checkbox-label">checkout as guest</label></div>
+            <div><input type="checkbox" id="register_input" class="checkbox"><label for="register_input" class="checkbox-label">register</label></div>
+            <span class="biggerspan">register and save time!</span>
+            <span class="smallerspan">Register with us for future convenience</span>
+            <div><i class="fas fa-angle-double-right rightangle"></i><span class="smallerspan">Fast and easy checkout</span></div>
+            <div><i class="fas fa-angle-double-right rightangle"></i><span class="smallerspan">Easy access to your order history and status</span></div>
+            <button class="checkout-shipping__button">Continue</button>
         </div>
-    </div>
-    <h3 class="women-collection__heading2">Moschino Cheap And Chic</h3>
-    <div class="women-collection__text"><p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p></div>
-    <div class="women-collection__material-designer">
-        <div>material: <span>Cotton</span></div>
-        <div>DESIGNER: <span>BIN BURHAN</span></div>
-    </div>
-    <div class="women-collection-price">$561</div>
-    <div class="women-collection-price__border"></div>
-    <form class="women-collection-choose">
-        <div class="choose-common">
-            <h4>CHOOSE COLOR</h4>
-            <div class="choose-common-box">
-                <div class="choose-color-box">
-                    <div class="choose-color-box__square"></div>Red
-                </div>
-                <i class="fas fa-angle-down"></i>
+        <div class="checkout-shipping-register">
+            <span class="biggerspan">Already registered?</span>
+            <span class="smallerspan">Please log in below</span>
+            <div class="checkout-shipping-register__input">
+                <label for="email">EMAIL ADDRESS <span class="required-fields">*</span></label>
+                <input type="email" id="email">
             </div>
-        </div>
-        <div class="choose-common">
-            <h4>CHOOSE SIZE</h4>
-            <div class="choose-common-box">
-                <span>XXL</span>
-                <i class="fas fa-angle-down"></i>
+            <div class="checkout-shipping-register__input">
+                <label for="password">PASSWORD <span class="required-fields">*</span></label>
+                <input type="password" id="password">
             </div>
-        </div>
-        <div class="choose-common">
-            <h4>QUANTITY</h4>
-            <div class="choose-common-box">
-                <span>2</span>
+            <span class="required-fields">* Required Fileds</span>
+            <div>
+                <button class="checkout-shipping__button">Log in</button>
+                <a href="#" class="checkout-shipping-register-forgotpassword">Forgot Password?</a>
             </div>
         </div>
     </form>
-    <div class="addtocart">
-        <a href="#">
-            <div class="addtocart-main"><img src="../img/sp-pinkcart.png" alt="cart"><span>Add to Cart</span></div>
-        </a>
+    <div class="checkout-forms">
+        <h2 class="main-label">02.   BILLING INFORMATION</h2>
     </div>
-</section>
-<div class="alsolike container">
-    <h2>you may also like</h2>
-    <div class="alsolike-items">
-        <div class="alsolike-items__item">
-            <div class="alsolike-items__item__box"><img src="../img/spitem1.png" alt="BLAZE LEGGINGS"></div>
-            <p class="alsolike-items__item__text">BLAZE LEGGINGS</p>
-            <p class="featured-item__price">$52.00</p>
-        </div>
-        <div class="alsolike-items__item">
-            <div class="alsolike-items__item__box"><img src="../img/spitem2.png" alt="ALEXA SWEATER"></div>
-            <p class="alsolike-items__item__text">ALEXA SWEATER</p>
-            <p class="featured-item__price">$52.00</p>
-        </div>
-        <div class="alsolike-items__item">
-            <div class="alsolike-items__item__box"><img src="../img/spitem3.png" alt="AGNES TOP"></div>
-            <p class="alsolike-items__item__text">AGNES TOP</p>
-            <p class="featured-item__price">$52.00</p>
-        </div>
-        <div class="alsolike-items__item">
-            <div class="alsolike-items__item__box"><img src="../img/spitem4.png" alt="SYLVA SWEATER"></div>
-            <p class="alsolike-items__item__text">SYLVA SWEATER</p>
-            <p class="featured-item__price">$52.00</p>
-        </div>
+    <div class="checkout-forms">
+        <h2 class="main-label">03.   SHIPPING INFORMATION</h2>
+    </div>
+    <div class="checkout-forms">
+        <h2 class="main-label">04.   SHIPPING METHOD</h2>
+    </div>
+    <div class="checkout-forms">
+        <h2 class="main-label">05.   PAYMENT METHOD</h2>
+    </div>
+    <div class="checkout-forms">
+        <h2 class="main-label">06.   ORDER REVIEW</h2>
     </div>
 </div>
 <section class="qs">
